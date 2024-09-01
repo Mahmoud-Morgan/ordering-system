@@ -2,14 +2,15 @@
 
 namespace App\Repositories\Implementations;
 
-use App\Models\Product;
-use App\Repositories\IProductRepository;
+use App\Models\Order;
+use App\Repositories\IOrderRepository;
 
-class ProductRepository extends Repository implements IProductRepository
+
+class OrderRepository extends Repository implements IOrderRepository
 {
-    public function __construct(Product $product)
+    public function __construct(Order $order)
     {
-        $this->setModel($product);
+        $this->setModel($order);
     }
 
 }

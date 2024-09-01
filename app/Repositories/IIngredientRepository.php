@@ -2,7 +2,7 @@
 
 namespace App\Repositories;
 
-interface IProductRepository extends IRepository
+interface IIngredientRepository extends IRepository
 {
 
 }

@@ -2,14 +2,14 @@
 
 namespace App\Repositories\Implementations;
 
-use App\Models\Product;
-use App\Repositories\IProductRepository;
+use App\Models\Ingredient;
+use App\Repositories\IIngredientRepository;
 
-class ProductRepository extends Repository implements IProductRepository
+class IngredientRepository extends Repository implements IIngredientRepository
 {
-    public function __construct(Product $product)
+    public function __construct(Ingredient $ingredient)
     {
-        $this->setModel($product);
+        $this->setModel($ingredient);
     }
 
 }

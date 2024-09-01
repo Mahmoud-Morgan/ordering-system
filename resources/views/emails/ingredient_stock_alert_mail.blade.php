@@ -6,10 +6,10 @@
 <body>
 <p>Hi, Sir</p>
 <p>
-    Kindly, you need to buy more of this ingredient {{ $ingredient->title }}, as stock level reaches 50%
+    Kindly, you need to buy more of this ingredient {{ $ingredientName }}, as stock reaches 50%
 </p>
 
-<strong>Thank you Sir. :)</strong>
+<strong>Best regards. :)</strong>
 
 </body>
 </html>

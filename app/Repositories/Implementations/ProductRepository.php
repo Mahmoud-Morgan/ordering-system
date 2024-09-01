@@ -2,7 +2,14 @@
 
 namespace App\Repositories\Implementations;
 
-class ProductRepository
+use App\Models\Product;
+use App\Repositories\IProductRepository;
+
+class ProductRepository extends Repository implements IProductRepository
 {
+    public function __construct(Product $product)
+    {
+        $this->setModel($product);
+    }
 
 }

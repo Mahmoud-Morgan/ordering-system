@@ -16,6 +16,8 @@ return [
 
     'default' => env('MAIL_MAILER', 'log'),
 
+    'merchant' => env('MERCHANT_MAIL', 'admin@merchant.com'),
+
     /*
     |--------------------------------------------------------------------------
     | Mailer Configurations
