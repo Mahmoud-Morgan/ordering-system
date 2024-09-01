@@ -46,6 +46,9 @@ php artisan key:generate
 > Run On Local Machine
 
 ``` bash
+php artisan test
+```
+``` bash
 php artisan serve
 ```
 
