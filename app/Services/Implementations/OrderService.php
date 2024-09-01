@@ -31,7 +31,7 @@ class OrderService implements IOrderService
 
     public function createOrder(array $data)
     {
-//        DB::transaction(function () use ($data) {
+        DB::transaction(function () use ($data) {
 
             $productIds = array_column($data['products'], 'product_id');
             // Lock rows for update
@@ -52,7 +52,7 @@ class OrderService implements IOrderService
             $order = $this->orderRepository->create([]);
             $order->products()->sync($productsQuantity);
 
-//        });
+        });
 
     }
 
