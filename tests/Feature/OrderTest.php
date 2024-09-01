@@ -22,6 +22,14 @@ class OrderTest extends TestCase
      */
     public function test_create(): void
     {
+        DB::statement('SET FOREIGN_KEY_CHECKS=0;');
+
+        DB::table('ingredient_product')->truncate();
+        DB::table('products')->truncate();
+        DB::table('ingredients')->truncate();
+
+        DB::statement('SET FOREIGN_KEY_CHECKS=1;');
+
         $this->artisan('db:seed');
 
         $order = [
